@@ -6,9 +6,10 @@ int main()
 {
     cout << "主进程" << endl;
     // fork() 在此处创建两个分支，同时返回两个值
-    // 一个pid>0，表示父进程
-    // 一个pid<0，表示子进程
+    // 一个pid>0，表示父(主)进程
+    // 一个pid=0，表示子进程
     // 注意是同时返回，即父子进程同时执行
+
     pid_t pid = fork();
 
     if (pid < 0)
@@ -24,8 +25,10 @@ int main()
 
     if (pid > 0)
     {
-        cout << "父（主）进程" << endl;
+        cout << "父(主)进程" << endl;
     }
+
+    cout<< "这里会打印两遍" <<endl;
 
     return 0;
 }

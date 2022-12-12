@@ -34,9 +34,12 @@ int main(){
     // join运行线程方式
     // 主线程会等待子线程运行结束之后，再退出
     // 主线程阻塞，子线程先运行
+    cout<<"before join"<<endl;
     t1.join();
+    cout<<"after join t1"<<endl;
     t2.join();
-    cout<<"after join"<<endl;
+    cout<<"after join t2"<<endl;
+    // 查看输出可知，t1和t2几乎同时执行，先于主线程
 
     // detach运行线程方式
     // 主线程不再管理子线程，不再等子线程结束之后再退出
