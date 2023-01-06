@@ -9,6 +9,8 @@ using namespace std;
 struct timespec为内置结构体，
 timespec.tv_sec为秒级精确度，timespec.tv_nsec为纳秒级精确度
 
+
+#include<time.h>
 clock_gettime(CLOCK_REALTIME, &time1)统计程序运行时间
 
 */
