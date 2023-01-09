@@ -31,8 +31,7 @@ void producter(int id){
         }
         
         /*
-        1. 在lock_guard的作用域内还是外?
-            从结果上看，在其内外无区别。需要找lihao确认。
+        1. 唤醒通常在lock_guard的作用域外，但从结果上看，在其内外无区别。
         2. cv.notify_one(); 随机唤醒一个等待的线程。
         3. cv.notify_all(); 唤醒所有等待线程。
         */
