@@ -4,6 +4,10 @@
 #include <string>
 using namespace std;
 
+/*
+解引用方式分析
+*/
+
 class Basic{
 public:
     int a = 1;
