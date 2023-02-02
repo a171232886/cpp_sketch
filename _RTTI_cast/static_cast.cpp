@@ -11,6 +11,8 @@ using namespace std;
 对static_cast的结论:
     static_cast和dynamic_cast相比缺少运行时检查，在向下转换时存在风险！
     不要使用！！！
+
+参考：https://learn.microsoft.com/zh-cn/cpp/cpp/static-cast-operator?view=msvc-170    
 */
 
 class Basic{
