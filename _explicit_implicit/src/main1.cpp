@@ -2,6 +2,8 @@
 using namespace std;
 
 /*
+参考：https://blog.csdn.net/liunan199481/article/details/85251197
+
 隐式转换(Implicit conversion)：
     1. 低精度 –> 高精度转换
     2. NULL指针可以转换为任意类型指针
